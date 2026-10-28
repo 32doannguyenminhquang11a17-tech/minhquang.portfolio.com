@@ -1,0 +1,92 @@
+.skills {
+  background:
+    linear-gradient(rgba(95,120,102,.045), rgba(95,120,102,.045)),
+    var(--paper);
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.skill-card {
+  min-height: 290px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255,253,248,.78);
+  box-shadow: 0 5px 0 rgba(95,120,102,.04);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
+}
+
+.skill-index {
+  color: var(--terracotta);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+}
+
+.skill-card h3 {
+  margin: 18px 0 12px;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.skill-card p {
+  margin-bottom: 24px;
+  color: var(--muted);
+}
+
+
+/* Chứng chỉ SolidWorks - giữ cùng phong cách card cũ */
+.certificate-card {
+  grid-column: 1 / -1;
+  min-height: auto;
+}
+
+.certificate-card h3 {
+  margin-bottom: 20px;
+}
+
+.certificate-image-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255,253,248,.78);
+}
+
+.certificate-image {
+  display: block;
+  width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.certificate-placeholder {
+  display: none;
+  min-height: 340px;
+  padding: 24px;
+  place-content: center;
+  text-align: center;
+  color: var(--muted);
+}
+
+.certificate-placeholder strong,
+.certificate-placeholder span {
+  display: block;
+}
+
+.certificate-placeholder strong {
+  margin-bottom: 8px;
+  color: var(--green-dark);
+}
